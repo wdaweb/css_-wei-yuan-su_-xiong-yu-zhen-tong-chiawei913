@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: '標楷體';
+    }
+    html,
+    body{
+      height: 100%;
+    }
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container{
+      display: flex;
+    }
+    .h_box{
+      width: 35px;
+      height: 100px;
+      background:linear-gradient(180deg, #fff, #dcdcdc,#fff);
+      margin: 20px auto;
+      left: -255px;
+      top: 0;
+      position: relative;
+      border: 1px solid black;
+      border-radius: 10%;
+    }
+    .h_box::after {
+      content: '';
+      width: 35px;
+      height: 65px;
+      background:linear-gradient(180deg, #fff, #dcdcdc,#fff);
+      position: absolute;
+      right: -38px;
+      top: 17px;
+      border: 1px solid black;
+    }
+    .box {
+      width: 35px;
+      height: 100px;
+      color: white;
+      background: #000;
+      margin: 20px auto;
+      border: 1px solid black;
+      position: relative;
+    }
+    .box::before {
+      content: '|||||||||||||||||||||||||||';
+      width: 220px;
+      height: 100px;
+      background:linear-gradient(180deg, #fff, #dcdcdc,#fff);
+      color: black;
+      position: absolute;
+      left: -220px;
+      top: -1px;
+      border: 1px solid black;
+      border-radius: 2%;
+    }
+
+    .box::after {
+      content: '|||||||||||||||||||||||||||';
+      width: 220px;
+      height: 100px;
+      background:linear-gradient(180deg, #ffa, #dcdcdc,#ffa);
+      color: black;
+      position: absolute;
+      right: -220px;
+      top: -1px;
+      border: 1px solid black;
+      border-radius: 2%;
+    }
+    .e_box{
+      width: 30px;
+      height: 65px;
+      background:linear-gradient(180deg, #fff, #dcdcdc,#fff);
+      margin: 20px auto;
+      left: 218px;
+      top: 17px;
+      position: relative;
+      border: 1px solid black;
+      border-radius: 10%;
+    }
+    .e_box::after {
+      content: '';
+      width: 100px;
+      height: 1px;
+      background:linear-gradient(180deg, #fff, #dcdcdc,#fff);
+
+      position: absolute;
+      right: -103px;
+      top: 32px;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="h_box"></div>
+    <div class="box">
+      <div class="content"></div>
+    </div>
+    <div class="e_box"></div>
+  </div>
+</body>
+</html>
